@@ -5,6 +5,7 @@ class Author
     private $name;
     private $email;
     private $gender;
+    public $test = 123;
 
     function __construct($name,$email,$gender)
     {
@@ -30,7 +31,7 @@ class Author
 
     public function  getGender()
     {
-        echo $this->gender;
+        //echo $this->gender;
         return $this->gender;
     }
 
@@ -42,18 +43,21 @@ class Author
 }
 
 echo 'dsfjalkfjfal';
+
 $author1 = new Author("Hoang Trung Kien","kcgl2012@gmail.com.vn","Male");
-var_dump($author1);
-echo '<br/';
+//var_dump($author1);
+echo $author1->test;
+echo '<br/>';
 echo  "Name : " . $author1->getName();
-echo '<br/';
+echo '<br/>';
 echo $author1->getEmail();
-echo '<br/';
+echo '<br/>';
 $author1->setMail('hoangtrungkien201293@gmail.com');
-echo '<br/';
+echo '<br/>';
 echo $author1->getEmail();
-echo '<br/';
+echo '<br/>';
 echo $author1->getGender();
-echo '<br/';
+echo '<br/>';
+echo 'dsafaaaaaaaaaaaaaaaaa';
 echo $author1;
 ?>
